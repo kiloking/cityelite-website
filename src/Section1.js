@@ -17,7 +17,7 @@ function Section1() {
         }
       <div className='aspect-[747/1200]  w-full  relative  z-0  lg:hidden overflow-x-scroll'> 
 
-        <div className='w-[300vw]  h-full lg:min-h-[70vh] overflow-x-hidden overflow-y-hidden bg-bottom bg-cover bg-no-repeat transition-width'
+        <div className='w-[300vw]  h-full lg:min-h-[70vh] overflow-x-hidden overflow-y-hidden bg-bottom bg-cover bg-no-repeat transition-width '
           style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/release/section1_map.png'})`}}
           data-aos="fade" data-aos-duration="1500"
         >
@@ -26,7 +26,7 @@ function Section1() {
         
       </div>
       <div
-        className='inset-0 h-full absolute  bg-center bg-no-repeat bg-cover  z-0  hidden lg:block'
+        className='inset-0 h-full absolute  bg-center bg-no-repeat bg-cover  z-0  hidden lg:block disable-blur'
         style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/release/section1_map.png'})`}}
         data-aos="fade" data-aos-duration="1500"
       >

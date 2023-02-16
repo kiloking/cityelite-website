@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+  .disable-blur{
+      image-rendering: -webkit-optimize-contrast;
+  }
+}
 input::placeholder { /* CSS 3 標準 */
   color: #083A5E;
 }
