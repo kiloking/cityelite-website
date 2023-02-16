@@ -14,3 +14,15 @@ input::-webkit-input-placeholder { /* Chrome, Safari */
 input::-ms-input-placeholder { /* IE 10+ */
   color: #083A5E;
 }
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{font-family: 'Noto Sans TC', arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;}
+@keyframes oxxo{
+  from{
+      /* left:0; */
+      transform: translateX(-50px);
+  }
+  to{
+      /* left:100px; */
+      transform: translateX(50px);
+  }
+}

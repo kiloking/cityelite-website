@@ -45,8 +45,7 @@ function Footer() {
 
   };
   return (
-    <div className='w-full py-10 bg-[#fff]'
-    style={{backgroundImage: `url(${process.env.PUBLIC_URL +'/images/footer_bg.png'})`}}>
+    <div className='w-full py-10 bg-[#06395C]'>
       {formStatus &&
        <Modal>
         <div className='bg-[#00000080] w-full h-full  absolute inset-0 z-0  ' onClick={()=>setFormStatus(!formStatus)}></div>
@@ -57,19 +56,19 @@ function Footer() {
        </Modal> 
       }
 
-      <div className='w-11/12 mx-auto flex gap-10 flex-col  lg:flex-row justify-start pt-10 bg-no-repeat bg-cover bg-center' >
-        <div className='w-full  lg:w-1/2 ' data-aos="fade-up" data-aos-duration="1500">
+      <div className='w-12/12 mx-auto flex gap-10 flex-col  lg:flex-row justify-between pt-10 bg-no-repeat bg-cover bg-center' >
+          <div className='w-full  lg:w-1/2 md:pl-12' data-aos="fade-up" data-aos-duration="1500">
             <div className='w-1/2 mx-auto md:w-5/12 md:mx-0 '>
-              <img src={process.env.PUBLIC_URL+'/images/footer_logo.png'} alt="" className='w-full'/>
+              <img src={process.env.PUBLIC_URL+'/images/release/footer_logo.png'} alt="" className='w-full'/>
             </div>
             <div className='w-4/5 mx-auto w-fit lg:w-full mt-16 lg:mt-20 lg:mx-0'>
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
-                <div className='bg-[#083A5E] rounded-full p-2 mr-1'><FaPhoneAlt  color='#fff' size='10' /></div>
-                <a href="tel:033200777" target="_blank"><b className='text-[#083A5E] md:text-xl  font-normal'>預約專線｜03-3200-777</b></a>
+                <div className='bg-[#fff] rounded-full p-2 mr-1'><FaPhoneAlt  color='#083A5E' size='10' /></div>
+                <a href="tel:033200777" target="_blank"><b className='text-[#fff] md:text-xl  font-normal'>預約專線｜03-3200-777</b></a>
               </div>
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
-                <div className='bg-[#083A5E] rounded-full p-2 mr-1'><FaMapMarkerAlt  color='#fff' size='10' /></div>
-                <b className='text-[#083A5E] md:text-xl font-normal'>服務總部｜桃園區龜山區文化一路,樂善二路口</b>
+                <div className='bg-[#fff] rounded-full p-2 mr-1'><FaMapMarkerAlt  color='#083A5E' size='10' /></div>
+                <b className='text-[#fff] md:text-xl font-normal'>服務總部｜桃園區龜山區文化一路,樂善二路口</b>
               </div>
             </div>
 
@@ -80,9 +79,10 @@ function Footer() {
           </div>
           {/* 表單 */}
           <div className='w-full  lg:w-1/2'>
-            <div className='text-[#083A5E] text-2xl font-bold  text-left mb-5  lg:text-left-left'>線上預約</div>
-            <div className='h-[2px] bg-[#083A5E] w-full my-3'></div>
-            <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10  rel" data-aos="fade-up" data-aos-duration="1500" >
+            <div className='text-[#083A5E] text-2xl font-bold  text-left mb-5  lg:text-left-left'>
+              <img src={process.env.PUBLIC_URL+'/images/release/footer_title.png'} alt="" className='w-full'/>
+            </div>
+            <form onSubmit={handleSubmit(onSubmit)} className="w-full mx-auto my-10  rel px-5 md:pr-12 md:pl-0" data-aos="fade-up" data-aos-duration="1500" >
                 <div className='w-full  my-5 '>
                   <input type="text" className="block  bg-white  w-full
                       px-3 py-3 shadow-md " placeholder="姓名"   {...register("name", { required: true})}/>
@@ -96,7 +96,7 @@ function Footer() {
                       px-3 py-3 shadow-md " placeholder="電子信箱"   {...register("mail", { required: true})}/>
                 </div>
                 <input type="hidden" name="msgMailTitle" value={msgMailTitle}  {...register("msgMailTitle", { required: true})}/>
-                <div className='text-[#083A5E] leading-9 font-bold text-base w-[90%] mx-auto'>
+                <div className='text-[#fff] leading-9 font-bold text-base w-[90%] mx-auto'>
                   本人已知悉以下個人資料蒐集聲明事項您所登錄的個人資料將作為以下用途：一、本網站所載之相關事項通知 二、客戶管理與服務 三、本公司行銷業務之推廣
                   <div className='flex ai-center jc-center  '>
 
@@ -105,8 +105,8 @@ function Footer() {
                   </div>
                 </div>
                 <div className='flex w-3/4 mx-auto gap-10 my-16'>
-                  <button className='bg-[#083A5E] px-2 py-3  font-bold w-full  text-lg tracking-wide text-[#fff]' type='submit'>送出</button>
-                  <button className='bg-[#083A5E] px-2 py-3  font-bold w-full  text-lg tracking-wide text-[#fff]' type='reset'>清除</button>
+                  <button className='bg-[#032B42] px-2 py-3 border font-bold w-full  text-lg tracking-wide text-[#fff]' type='submit'>送出</button>
+                  <button className='bg-[#032B42] px-2 py-3 border font-bold w-full  text-lg tracking-wide text-[#fff]' type='reset'>清除</button>
                 </div>
                 <div>{error}  {mailSent}</div>            
               </form>
