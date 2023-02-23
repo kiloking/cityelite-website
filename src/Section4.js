@@ -13,9 +13,9 @@ function Section4() {
       </div>
       <div className='flex items-center justify-between flex-col md:flex-row' data-aos="fade" data-aos-duration="1500">
         <div className='w-1/2 mx-auto mb-10'>
-          <img src={process.env.PUBLIC_URL+'/images/release/section4_logo.png'} alt="" className='nax-w-full mx-auto disable-blur'/>
-          <img src={process.env.PUBLIC_URL+'/images/release/section4_title.png'} alt="" className='nax-w-full mx-auto py-10 md:py-20 disable-blur'/>
-          <img src={process.env.PUBLIC_URL+'/images/release/section4_text.png'} alt="" className='nax-w-full mx-auto disable-blur'/>
+          <img src={process.env.PUBLIC_URL+'/images/release/section4_logo.png'} alt="" className='max-w-full mx-auto disable-blur'/>
+          <img src={process.env.PUBLIC_URL+'/images/release/section4_title.png'} alt="" className='max-w-full mx-auto py-10 md:py-20 disable-blur'/>
+          <img src={process.env.PUBLIC_URL+'/images/release/section4_text.png'} alt="" className='max-w-full mx-auto disable-blur'/>
         </div>
         <div className=''>
           <img src={process.env.PUBLIC_URL+'/images/release/section4_p01.png'} alt="" className='w-full disable-blur'/>
