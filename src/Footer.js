@@ -61,7 +61,7 @@ function Footer() {
             <div className='w-1/2 mx-auto md:w-5/12 md:mx-0 '>
               <img src={process.env.PUBLIC_URL+'/images/release/footer_logo.png'} alt="" className='w-full'/>
             </div>
-            <div className='w-4/5 mx-auto w-fit lg:w-full mt-16 lg:mt-20 lg:mx-0'>
+            <div className='w-4/5 mx-auto lg:w-full mt-16 lg:mt-20 lg:mx-0'>
               <div className='flex items-center gap-5 mb-5  mx-auto lg:mx-0'>
                 <div className='bg-[#fff] rounded-full p-2 mr-1'><FaPhoneAlt  color='#083A5E' size='10' /></div>
                 <a href="tel:033200777" target="_blank"><b className='text-[#fff] md:text-xl  font-normal'>預約專線｜03-3200-777</b></a>
@@ -78,7 +78,7 @@ function Footer() {
             </div>
           </div>
           {/* 表單 */}
-          <div className='w-full  lg:w-1/2'>
+          <div className='w-10/12 mx-auto  lg:w-1/2'>
             <div className='text-[#083A5E] text-2xl font-bold  text-left mb-5  lg:text-left-left'>
               <img src={process.env.PUBLIC_URL+'/images/release/footer_title.png'} alt="" className='w-full'/>
             </div>
